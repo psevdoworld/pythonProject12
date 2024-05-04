@@ -1,0 +1,14 @@
+
+{%  for post in postiki  %}
+    <br>
+    <a href = "/post/{{post.id}}">
+        {{post.title}} by   {{post.author.username}}
+    </a>
+    {% if post.picture %}
+    <img src="{{post.picture.url}}">
+    {% endif %}
+    <br>
+    {{post.text}}
+    <br>
+
+{% endfor %}

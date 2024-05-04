@@ -1,0 +1,10 @@
+
+
+    <br>
+    {{post.title}} by   {{post.author.username}}
+    {% if post.picture %}
+        <img src="{{post.picture.url}}">
+    {% endif %}
+    <br>
+    {{post.text}}
+    <br>
